@@ -1,0 +1,373 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+  background: url("http://cdn.pcwallart.com/images/tokyo-at-night-hd-wallpaper-1.jpg");
+  min-width: 400px;
+  margin: 0;
+  height: 100%;
+  background-size: cover;
+}
+
+article {
+  color: white;
+  background-color: darkcyan;
+  opacity: .9;
+
+  padding: 2.5%;
+  margin: 5%;
+  border-radius: 5%;
+  font-size: 18px;
+}
+
+textarea{
+    color: black !important;
+    width: 100%;
+    padding: 2% !important;
+    margin: 0 !important;
+    border-radius: 5%;
+}
+
+.commentArea{
+    background-color: cyan !important;
+    text-align: left !important;
+    border-radius: 5%;
+    padding: 1% 1% 1%;
+    margin: 1% 0 1%;
+    color: black !important;
+    width: 100%;
+    height: 250px;
+    overflow-y: auto;
+    border:1px solid;
+}
+
+.keyword{
+    color: rgb(0, 0, 0);
+}
+.keyword:link, .keyword:visited
+{
+    color: black;
+}
+.keyword: hover, .keyword:visited:hover{
+    color: red;
+    text-decoration: black;
+}
+img{
+    width: 100%;
+    margin: 2.5% 0 2.5%;
+}
+
+.block{
+  background-color: black;
+  opacity: .7;
+  padding: 2%;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 8%;
+  border-radius: 5%;
+  color: white;
+}
+
+.fa{
+  color: white;
+  padding: 2.5%;
+  margin: 2% 1%;
+}
+
+.fa:link{
+    text-decoration: none;
+}
+.fa:hover{
+  color: white;
+  opacity: 0.7;
+}
+.fa-google{
+  background-color: red;
+  border-color: red;
+}
+
+.fa-twitter{
+  background-color: cyan;
+  border-color: cyan;
+}
+
+.fa-github{
+  background-color: black;
+  border-color: black;
+}
+
+.fa-linkedin{
+  background-color: darkcyan;
+  border-color: darkcyan;
+}
+
+.fa-facebook{
+  background-color: blue;
+  border-color: blue;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+#remove{
+  margin: 2.5%;
+}
+
+#author{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 2.5%;
+    font-size: 20px;
+}
+
+#top{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  right: 10px;
+  padding-top: 10px;
+  background-color: red;
+  border-radius: 100%;
+  text-align: center;
+}
+#top:focus{
+  outline: 0;
+}
+#top:hover{
+  background-color: black;
+}
+#top:link{
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 1200px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
